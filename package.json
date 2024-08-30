@@ -1,14 +1,18 @@
 {
-  "name": "weather",
-  "version": "0.0.1",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "name": "YunZhi",
+  "version": "0.0.2",
+  "main": "weather.js",
+  "type": "module",
+  "bin": {
+    "yunzhi":"./src/weather.js"
   },
-  "keywords": [],
+  "scripts": {
+    "start": "node src/weather.js"
+  },
+  "keywords": ["天气", "查询", "命令行工具", "终端魔法师", "CLI"],
   "author": "jackW",
   "license": "MIT",
-  "description": "",
+  "description": "云知 - 终端魔法师系列之天气查询精灵",
   "devDependencies": {
     "axios": "^1.7.5",
     "commander": "^12.1.0"
