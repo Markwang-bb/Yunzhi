@@ -1,15 +1,22 @@
 {
   "name": "yunzhi",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "weather.js",
   "type": "module",
   "bin": {
-    "yunzhi":"./src/weather.js"
+    "yunzhi": "./src/weather.js"
   },
   "scripts": {
-    "start": "node src/weather.js"
+    "start": "node src/weather.js",
+    "start:cron": "node src/weather.js --cron"
   },
-  "keywords": ["天气", "查询", "命令行工具", "终端魔法师", "CLI"],
+  "keywords": [
+    "天气",
+    "查询",
+    "命令行工具",
+    "终端魔法师",
+    "CLI"
+  ],
   "author": "jackW",
   "license": "MIT",
   "description": "云知 - 终端魔法师系列之天气查询精灵",
@@ -18,6 +25,8 @@
     "commander": "^12.1.0"
   },
   "dependencies": {
-    "dotenv": "^16.4.5"
+    "dotenv": "^16.4.5",
+    "node-cron": "^3.0.3",
+    "nodemailer": "^6.9.14"
   }
 }
