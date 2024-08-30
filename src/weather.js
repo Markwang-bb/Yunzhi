@@ -14,7 +14,7 @@ const __dirname = dirname(__filename);
 dotenv.config({ path: join(__dirname, '.env') });
 
 program
-  .version('1.0.0')
+  .version('0.0.2')
   .description('云知 - 终端魔法师系列之天气查询精灵')
   .option('-c, --city <city>', '要查询的城市名称或城市编码')
   .option('-d, --days <days>', '要查询的天数（1-4）', '4')
