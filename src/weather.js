@@ -58,16 +58,6 @@ async function getWeather(city) {
         weatherInfo += `温度：${cast.nighttemp}°C ~ ${cast.daytemp}°C\n`;
         weatherInfo += `风向：白天 ${cast.daywind}，夜间 ${cast.nightwind}\n`;
         weatherInfo += `风力：白天 ${cast.daypower}级，夜间 ${cast.nightpower}级\n`;
-
-        // 添加新的天气信息（假设API提供这些数据）
-        if (cast.humidity) weatherInfo += `湿度：${cast.humidity}%\n`;
-        if (cast.precipitation) weatherInfo += `降水概率：${cast.precipitation}%\n`;
-        if (cast.visibility) weatherInfo += `能见度：${cast.visibility}公里\n`;
-        if (cast.uv_index) weatherInfo += `紫外线指数：${cast.uv_index}\n`;
-        if (cast.aqi) weatherInfo += `空气质量指数：${cast.aqi}\n`;
-        if (cast.pressure) weatherInfo += `气压：${cast.pressure}百帕\n`;
-
-        weatherInfo += '\n';
       });
 
       return weatherInfo;
