@@ -1,6 +1,6 @@
 {
   "name": "yunzhi",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "main": "weather.js",
   "type": "module",
   "bin": {
